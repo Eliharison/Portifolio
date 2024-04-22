@@ -1,288 +1,417 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Conhece uma pessoa sonhadora?, então você saberá assim que conhecer melhor meu portfólio!" />
+    <meta name="keywords" content="Portifólio, Front-End, Networking" />
+    <meta name="author" content="Eliharison Gonçalves Sabino Gabriel" />
+
+    <meta property="og:url" content="https://eliharison.dev/" />
+    <meta property="og:type" content="portfólio" />
+    <meta property="og:title" content="Eliharison Gabriel" />
+    <meta property="og:description" content="Venha conhecer mais sobre mim!" />
+    <meta property="og:image" itemprop="image" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Fonte do Projeto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
     <title>Portifólio Pessoal</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Sessão de Menu  -->
     <div class="all">
-    <section class="menu">
+      <section class="menu">
         <header>
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Eliharison</h3>
+          <img src="assets\vector.png" />
+          <h3 class="menu__title">Eliharison</h3>
         </header>
         <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="#contato">Contato@fulana.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li>
+          <ul class="menu__list">
+            <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
+            <li class="menu__list__item"><a href="#skills">Skills</a></li>
+            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+            <li class="menu__list__item">
+              <a href="#formacao">Formações e Cursos</a>
+            </li>
+            <li class="menu__list__item"><a href="#xp">Experiência</a></li>
+            <li class="menu__list__item">
+              <a href="#contato">eliharison11@gmail.com</a>
+            </li>
+          </ul>
+          <li class="menu__list__item__contato">
+            <a href="#contato">eliharison11@gmail.com</a>
+          </li>
         </nav>
-    </section>
+      </section>
 
-<!-- Sessão de Header/Title/Hero -->
-    <section class="title">
+      <!-- Sessão de Header/Title/Hero -->
+      <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
-            <div class="title__container" id="#sobremim">
-                <h2 class="title__bio">Olá, meu nome é Fulana de Tal e construo páginas web</h2>
-                <h3 class="title__subsection">Eu sou formada em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
-                <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets\arrow.png"></a></li>
-                </ul>
-            </div>
+          <img class="title__profile" src="assets\profile.png" />
+          <div class="title__container" id="#sobremim">
+            <h2 class="title__bio">
+              Olá, meu nome é Eliharison Gonçalves Sabino Gabriel e construo
+              páginas web
+            </h2>
+            <p class="title__subsection">
+              Eu sou estudante em Desenvolvimento de Sotfware e estou animado
+              para começar a minha primeira experiência profissional na área de
+              tecnologia.
+            </p>
+            <ul class="title__network">
+              <!-- Ponha os links de suas redes sociais favoritas -->
+              <li class="title__network__item">
+                <a href="https://github.com/eliharison">Github <img src="assets\arrow.png" /> </a>
+              </li>
+              <li class="title__network__item">
+                <a href="https://www.linkedin.com/in/eliharison/">Linkedin <img src="assets\arrow.png" /></a>
+              </li>
+              <li class="title__network__item">
+                <a href="https://www.instagram.com/elihszd/">Instagram <img src="assets\arrow.png" /></a>
+              </li>
+              <li class="title__network__item">
+                <a href="">Curriculo <img src="assets\arrow.png" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-        <!-- Sessão sobre mim -->
-    <section class="about">
+      <!-- Sessão sobre mim -->
+      <section class="about">
         <div class="about__container">
-            <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets\signature.png">
+          <h2 class="about__title">Sobre mim</h2>
+          <p class="about__paragraph">
+            Sou um Jovem entusiasmado por tecnologia que busca sempre melhorar, sou responsavel e objetivo, esforçando ao maximo para no final descansar com a familia que tanto amo.
+          </p>
+          <p class="about__paragraph">
+            Minha ambição é tornar-me dev full Stack e estou decidindo começar
+            minha carreira aprendendo Front-End e aos poucos aumentando meu
+            conhecimento para assim conseguir me consolidar na carreira e estou
+            ansioso para dar meus primeiros passos!
+          </p>
+          <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
+          <img src="assets\signature.png" />
         </div>
-    </section>
+      </section>
 
-<!-- Sessão de Skills/Habilidades -->
-    <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> Html 5</li>
-                    </ul>
-                </div>
+      <!-- Sessão de Skills/Habilidades -->
+      <section class="skills">
+        <h2 class="skills__title" id="skills">Skills</h2>
+        <div class="skills__line">
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img"><img src="assets\htlm.png" /></li>
+              <li class="skills__name">Html 5</li>
+            </ul>
+          </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\js_icon.png" alt="" />
+              </li>
+              <li class="skills__name">Javascript</li>
+            </ul>
+          </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
-                    </ul>
-                </div>
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/java-fill_icon.png" alt="" />
+              </li>
+              <li class="skills__name">Java</li>
+            </ul>
+          </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\nodejs_icon.png" alt="" />
+              </li>
+              <li class="skills__name">Node JS</li>
+            </ul>
+          </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\react_icon.png" alt="" />
+              </li>
+              <li class="skills__name">React</li>
+            </ul>
+          </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets\css_icon.png" alt="" />
+              </li>
+              <li class="skills__name">CSS</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-<!-- Sessão de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Andar de skate</li>
-                    </ul>
-                </div>
+      <!-- Sessão de Hobbies -->
+      <section class="hobbies" id="hobbies">
+        <h2 class="hobbies__title">Hobbies</h2>
+        <div class="hobbies__line">
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="./assets/gaming_icon.png" />
+              </li>
+              <li class="hobbies__name">Jogar</li>
+            </ul>
+          </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar baixo</li>
-                    </ul>
-                </div>
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="./assets/exercise_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Academia</li>
+            </ul>
+          </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ouvir música</li>
-                    </ul>
-                </div>
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\headphones_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Ouvir música</li>
+            </ul>
+          </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Assistir séries</li>
-                    </ul>
-                </div>
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="assets\tv_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Assistir animes</li>
+            </ul>
+          </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cozinhar</li>
-                    </ul>
-                </div>
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="./assets/volleyball_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Vôlei</li>
+            </ul>
+          </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tirar fotos</li>
-                    </ul>
-                </div>
+          <div class="hobbies__box">
+            <ul>
+              <li class="hobbies__img">
+                <img src="./assets/program_icon.png" alt="" />
+              </li>
+              <li class="hobbies__name">Programar</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
+      <!-- Sessão de Histórico Acadêmico -->
+      <section class="academic">
         <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
         <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Análise de dados</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Formação ux Design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Pós-graduação design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - UFRJ</p></li>
-                </ul>
-            </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Insira a logo de seu local de formação -->
+              <li class="academic__courses__item__img">
+                <img src="./assets/etec_registro.png" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Ensino Médio Integrado ao Técnico: Administração</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2020 ~ 2022 - Etec Registro</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Insira a logo de seu local de formação -->
+              <li class="academic__courses__item__img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="174"
+                  height="110"
+                  viewBox="0 0 65 31"
+                >
+                  <path
+                    fill="#747C81"
+                    fill-rule="evenodd"
+                    d="M17.203 0h2.946c.148 0 .272.124.272.272v29.48a.275.275 0 0 1-.272.273h-2.946a.275.275 0 0 1-.272-.273V.272c0-.148.123-.272.272-.272zM37.45 24.257V25c0 .322-.049.767-.173 1.337-.099.544-.396 1.113-.866 1.658-.47.545-1.163 1.04-2.104 1.436-.94.396-2.228.594-3.886.594-1.659 0-2.946-.198-3.886-.594-.94-.396-1.634-.867-2.104-1.436-.47-.545-.768-1.114-.867-1.683-.099-.57-.173-.99-.173-1.312V8.218c0-.149.124-.272.272-.272h2.946c.148 0 .272.123.272.272v15.718c0 .52.074.89.149 1.188.074.297.222.594.445.841.223.273.57.495 1.04.669.445.173 1.064.272 1.832.272.792 0 1.435-.1 1.905-.272.47-.174.817-.396 1.065-.644.247-.247.42-.52.495-.817.074-.297.173-.544.173-1.262V8.218c0-.149.124-.272.272-.272h2.946c.148 0 .272.123.272.272v16.04h-.025zM47.475 7.946h1.98c.174 0 .297.173.248.346l-.668 2.574c-.025.124-.149.198-.248.198h-1.386c-.743 0-1.337.1-1.807.297-.445.198-.817.421-1.064.693a1.991 1.991 0 0 0-.47.817c-.075.297-.1.57-.1.817v16.089a.275.275 0 0 1-.272.273h-2.97a.275.275 0 0 1-.272-.273V12.995c0-.297.049-.743.173-1.312.099-.57.396-1.114.866-1.683.47-.545 1.164-1.04 2.104-1.436.916-.42 2.228-.618 3.886-.618zm-40.47 0c2.4 0 4.158.47 5.297 1.41 1.114.941 1.683 2.13 1.683 3.54V25.025c0 .495-.099 1.04-.272 1.609-.173.594-.52 1.138-1.04 1.609-.52.495-1.237.89-2.128 1.237-.892.322-2.08.495-3.515.495-1.46 0-2.624-.173-3.515-.495s-1.61-.742-2.129-1.237c-.52-.495-.866-1.04-1.04-1.61-.173-.593-.272-1.138-.272-1.608v-1.93c0-1.04.273-1.981.792-2.823.545-.841 1.287-1.46 2.278-1.807.495-.173 1.04-.346 1.683-.569.619-.223 1.237-.42 1.831-.644.594-.198 1.09-.396 1.535-.544.446-.173.718-.248.817-.297.099-.05.247-.124.42-.223.174-.099.347-.247.52-.42.174-.199.298-.421.421-.644.124-.248.174-.545.174-.867v-.767c0-.272-.05-.544-.174-.841-.099-.298-.297-.545-.569-.793-.272-.247-.644-.445-1.09-.594-.445-.148-1.014-.222-1.707-.222-1.361 0-2.277.272-2.772.841a3.019 3.019 0 0 0-.718 1.782c0 .149-.124.248-.272.248H.273A.275.275 0 0 1 0 13.639v-.718c0-.693.124-1.337.396-1.93.248-.595.668-1.14 1.262-1.585.57-.446 1.288-.817 2.179-1.064.866-.248 1.93-.396 3.168-.396zm3.515 10.866a.917.917 0 0 1-.421.619c-.223.148-.42.222-.619.297-.42.148-.866.297-1.336.47-.47.173-.916.347-1.337.47-.495.174-.965.322-1.386.495a4.148 4.148 0 0 0-.94.57c-.248.222-.471.495-.67.841-.197.347-.296.768-.296 1.287 0 1.04.247 1.807.742 2.327.495.495 1.411.767 2.748.767 1.361 0 2.302-.272 2.797-.792.495-.544.743-1.287.743-2.277v-5.074h-.025zm47.5-10.866c2.4 0 4.158.47 5.297 1.41 1.114.941 1.683 2.13 1.683 3.54V25.025c0 .495-.099 1.04-.272 1.609-.174.594-.52 1.138-1.04 1.609-.52.495-1.238.89-2.129 1.237-.89.322-2.079.495-3.514.495-1.46 0-2.624-.173-3.515-.495s-1.61-.742-2.129-1.237c-.52-.495-.866-1.04-1.04-1.61-.173-.593-.272-1.138-.272-1.608v-1.93c0-1.04.272-1.981.792-2.823.545-.841 1.287-1.46 2.277-1.807.495-.173 1.04-.346 1.684-.569.618-.223 1.237-.42 1.831-.644.594-.198 1.09-.396 1.535-.544.445-.173.718-.248.817-.297.099-.05.247-.124.42-.223.174-.099.347-.247.52-.42.174-.199.297-.421.421-.644.124-.248.173-.545.173-.867v-.767c0-.272-.05-.544-.173-.841-.099-.298-.297-.545-.57-.793-.271-.247-.643-.445-1.088-.594-.446-.148-1.015-.222-1.708-.222-1.362 0-2.277.272-2.772.841a3.019 3.019 0 0 0-.718 1.782c0 .149-.124.248-.273.248h-2.97a.275.275 0 0 1-.272-.272v-.718c0-.693.124-1.337.396-1.93.247-.595.668-1.14 1.262-1.585.57-.446 1.287-.817 2.178-1.064.892-.248 1.931-.396 3.169-.396zm3.515 10.866a.917.917 0 0 1-.421.619c-.223.148-.42.222-.619.297-.42.148-.866.297-1.337.47-.47.173-.915.347-1.336.47-.495.174-.966.322-1.386.495a4.148 4.148 0 0 0-.941.57c-.247.222-.47.495-.668.841-.198.347-.297.768-.297 1.287 0 1.04.247 1.807.742 2.327.495.495 1.411.767 2.748.767 1.361 0 2.302-.272 2.797-.792.495-.544.742-1.287.742-2.277v-5.074h-.024z"
+                  />
+                </svg>
+              </li>
+              <li class="academic__courses__item__title">
+                <h3>Formação Alura Front-End</h3>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2024 ~ Em andamento - Alura</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Insira a logo de seu local de formação -->
+              <li class="academic__courses__item__img">
+                <img src="./assets/fatec_registro.png" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h3>Desenvolvimento de Software e multiplataforma</h3>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2023 ~ Em andamento - Fatec Registro</p>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
+      <!-- Sessão de Experiência Profissional/Projetos-->
+      <h2 class="experience__section__title" id="xp">
+        Experiência Profissional
+      </h2>
+      <section class="experience">
         <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
+          <!-- Insira a logo/captura de seu projeto/trabalho -->
+          <img class="experience__img" src="./assets/projeto_technote.png" />
+          <div class="experience__info">
+            <h3 class="experience__title">Site TechNote</h3>
+            <p class="experience__text">
+              Site de Equipe que participei da construção do Design e do CSS
+            </p>
+            <div class="experience__description">
+              <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+              <span class="experience__repo"
+                ><a href="https://github.com/Eliharison/Technote"
+                  ><button class="experiencia__botao--repo">
+                    Repositório
+                  </button></a
+                ></span
+              >
+              <span class="experience__demo"
+                ><a href="https://eliharison.github.io/Technote/"
+                  ><button class="experiencia__botao--demo">Ver demo</button></a
+                ></span
+              >
             </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-            <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
+          </div>
         </div>
-        </div>  
-
-        <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
-                    </form>
-                </div>
+        <div class="experiencie__box">
+          <!-- Insira a logo/captura de seu projeto/trabalho -->
+          <img
+            class="experience__img"
+            src="./assets/projeto_decodificador.png"
+          />
+          <div class="experience__info">
+            <h3 class="experience__title">Decodificador</h3>
+            <p class="experience__text">Challenge Oracle + Alura</p>
+            <div class="experience__description">
+              <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+              <span class="experience__repo"
+                ><a href="https://github.com/Eliharison/Decodificador-de-Texto"
+                  ><button class="experiencia__botao--repo">
+                    Repositório
+                  </button></a
+                ></span
+              >
+              <span class="experience__demo"
+                ><a href="https://eliharison.github.io/Decodificador-de-Texto/"
+                  ><button class="experiencia__botao--demo">Ver demo</button></a
+                ></span
+              >
             </div>
-        </section>
-
-        <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desenvolvido por Fulana de Tal</p>
-                <p>2022</p>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <!-- Sessão de Contato -->
+      <section class="formcontato">
+        <div id="contato" class="formcontato__contacto">
+          <div class="formcontato--esquerda">
+            <img class="formcontato__img" src="assets\contact_image.png" />
+          </div>
+          <div class="formcontato__text">
+            <h2 class="formcontato__title">Contato</h2>
+            <h4 class="formcontato__subtext">Quer entrar em contato comigo?</h4>
+            <p class="formcontato__subtext">
+              Preencha o formulário ao lado e entrarei em contato o mais rápido
+              possível.
+            </p>
+            <form method="POST" action="validate.js" class="formcontato__form">
+              <input
+                class="formcontato__input"
+                type="text"
+                id="nome"
+                placeholder="Nome"
+                required
+              />
+              <input
+                class="formcontato__input"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="formcontato__input"
+                type="text"
+                id="assunto"
+                placeholder="Assunto"
+                required
+              />
+              <textarea
+                class="formcontato__textarea"
+                rows="5"
+                cols="40"
+                id="mensagem"
+                name="mensagem"
+                placeholder="Sua mensagem"
+                required
+              ></textarea>
+              <button class="formcontato__botao">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Sessão de Footer/Rodapé-->
+      <section class="footer">
+        <div class="footer__rodape">
+          <h3>Desenvolvido por Eliharison Gabriel</h3>
+          <h3>2024</h3>
+        </div>
+      </section>
     </div>
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
-</body>
+    <script src="validate.js"></script>
+  </body>
 </html>
-
