@@ -1,5 +1,3 @@
-//Seu JavaScript de validação aqui
-
 emailjs.init("vFvhvcR2LUu9sjhRI");
 
 document
@@ -16,10 +14,33 @@ document
       })
       .then(
         function (response) {
-          console.log("SUCCESS!", response.status, response.text);
+          if (response) {
+            alterarDisplayClasse(".overlay", true);
+            alterarDisplayClasse(".overlay__modal", true);
+            alterarDisplayClasse(".overlay__modal--success", true);
+            console.log("SUCCESS!", response.status, response.text);
+          }
         },
         function (error) {
-          console.log("FAILED...", error);
+          if (error) {
+            alterarDisplayClasse(".overlay", true);
+            alterarDisplayClasse(".overlay__modal", true);
+            alterarDisplayClasse(".overlay__modal--error", true);
+            console.log("FAILED...", error);
+          }
         }
       );
   });
+
+function alterarDisplayClasse(classe, mostrar) {
+  const elemento = document.querySelector(classe);
+  if (elemento) {
+    elemento.style.display = mostrar ? "flex" : "none";
+  }
+}
+function fecharModal() {
+  alterarDisplayClasse(".overlay", false);
+  alterarDisplayClasse(".overlay__modal", false);
+  alterarDisplayClasse(".overlay__modal--error", false);
+  alterarDisplayClasse(".overlay__modal--success", false);
+}

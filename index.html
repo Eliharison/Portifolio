@@ -53,6 +53,11 @@
     />
 
     <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
@@ -426,11 +431,42 @@
                 placeholder="Sua mensagem"
                 required
               ></textarea>
-              <button class="formcontato__botao">Enviar mensagem</button>
+              <button onclick="fecharModal()" class="formcontato__botao">Enviar mensagem</button>
             </form>
           </div>
         </div>
       </section>
+
+      <!-- Modal de Resposta ao usuário -->
+      <div class="overlay">
+        <div class="overlay__modal">
+          <div class="overlay__modal--success">
+            <dotlottie-player
+              src="https://lottie.host/0efde8ff-04f6-48c2-8022-bc4da5419a81/2VqqmnKF9t.json"
+              background="transparent"
+              speed="1"
+              style="width: 4rem; height: 4rem"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <p>E-mail foi enviado com Sucesso!</p>
+            <button onclick="fecharModal()"  class="modal__botao">Voltar para a Página</button>
+          </div>
+          <div class="overlay__modal--error">
+            <dotlottie-player
+              src="https://lottie.host/4383ae18-9626-45bb-94da-41cfaa7e3d25/xQfA7elead.json"
+              background="transparent"
+              speed="1"
+              style="width: 4rem; height: 4rem"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <p>E-mail não foi enviado! Porfavor entre em contato manualmente</p>
+            <button onclick="fecharModal()" class="modal__botao">Voltar para a Página</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Sessão de Footer/Rodapé-->
       <section class="footer">
         <div class="footer__rodape">
@@ -439,6 +475,7 @@
         </div>
       </section>
     </div>
+
     <!-- Script Linkado do seu documento de JavaScript -->
     <script src="validate.js"></script>
   </body>
